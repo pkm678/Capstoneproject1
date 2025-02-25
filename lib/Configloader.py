@@ -4,7 +4,7 @@ from pyspark import SparkConf
 
 def get_config(env):
     config = configparser.ConfigParser()
-    config.read("conf/capstone .conf")
+    config.read("conf/capstone.conf")
     conf = {}
     for (key, val) in config.items(env):
         conf[key] = val
